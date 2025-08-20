@@ -112,7 +112,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">olovajs@gmail.com</p>
+                    <p className="text-gray-400">sakshishar8054@gmail.com</p>
                   </div>
                 </div>
 
@@ -121,8 +121,8 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-pink-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Laxmipure, Natore 6400</p>
+                    <h3 className="font-semibold"> Current Location</h3>
+                    <p className="text-gray-400">Ludhiana,Punjab</p>
                   </div>
                 </div>
               </div>

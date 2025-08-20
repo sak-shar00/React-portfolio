@@ -1,72 +1,46 @@
 import React, { useState } from "react";
-import EducationLoader from "@/components/ui/EducationLoader";
-import {
-  Star,
-  Award,
-  Calendar,
-  BookOpen,
-  GraduationCap,
-  Trophy,
-} from "lucide-react";
+import { Award, Calendar, BookOpen, Trophy } from "lucide-react";
 import { motion } from "framer-motion";
 
 const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
+  // Make sure this is always defined
   const educationData = [
     {
-      degree: "Secondary School Certificate (SSC)",
-      school: "Natore Textile Institute",
+      degree: "Secondary School Certificate (10th & 12th)",
+      school: "Baba Lal Dayal Sr. Sec. School, Pathankot",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2010 - 2022",
+      achievements: ["Non-Medical Stream", "94.6% Marks"],
+      skills: ["Mathematics", "Physics", "Chemistry", "Computer Basics"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Completed schooling with excellent academic performance in non-medical subjects, building a strong foundation in logical and analytical thinking.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
-      mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      degree: "B.Tech in Information Technology",
+      school: "Guru Nanak Dev Engineering College",
+      mascot: "🎓",
+      year: "2022 - Present",
+      achievements: ["Current CGPA: 9.42", "Department: IT"],
+      skills: ["JavaScript", "React", "Node.js", "SQL", "MongoDB"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Pursuing undergraduate engineering degree in IT, gaining hands-on experience in web development, programming, and software engineering projects.",
     },
   ];
 
   const containerVariants = {
     hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.2,
-      },
-    },
+    visible: { opacity: 1, transition: { staggerChildren: 0.2 } },
   };
 
   const cardVariants = {
     hidden: { y: 50, opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.6,
-        ease: "easeOut",
-      },
-    },
+    visible: { y: 0, opacity: 1, transition: { duration: 0.6, ease: "easeOut" } },
   };
 
   return (
     <section className="min-h-screen relative overflow-hidden py-40 bg-[#04081A]">
-      {/* Grid Background */}
-      <div className="absolute inset-0 z-0">
-        <div className="absolute inset-0 bg-grid-white/[0.05] bg-[length:50px_50px]" />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#04081A] via-transparent to-[#04081A]" />
-        <div className="absolute inset-0 border border-white/[0.05] grid grid-cols-2 md:grid-cols-4" />
-      </div>
-
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
@@ -78,8 +52,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
+            Discover how academic excellence shapes innovative thinking and professional growth.
           </p>
         </motion.div>
 
@@ -89,7 +62,7 @@ const EducationSection = () => {
           animate="visible"
           className="grid grid-cols-1 md:grid-cols-2 gap-8"
         >
-          {educationData.map((edu, index) => (
+          {educationData?.map((edu, index) => (
             <motion.div
               key={index}
               variants={cardVariants}
@@ -105,9 +78,7 @@ const EducationSection = () => {
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <span className="text-3xl">{edu.mascot}</span>
-                    <h3 className="text-2xl font-bold text-white">
-                      {edu.degree}
-                    </h3>
+                    <h3 className="text-2xl font-bold text-white">{edu.degree}</h3>
                   </div>
                   <p className="text-lg text-gray-300 flex items-center gap-2">
                     <BookOpen className="w-5 h-5 text-teal-500" />
