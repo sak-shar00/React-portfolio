@@ -2,6 +2,7 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import portfolio from "../../assets/images/port.png";
 
 const projects = [
   {
@@ -12,7 +13,7 @@ const projects = [
     link: "https://cms.menutiger.com/wp-content/uploads/2023/04/How-to-Create-QR-Code-for-Food-Menu-copy-1024x522.jpg",
     color: "#ff7f50",
     githubLink: "https://github.com/RachitRawat09/Minnor_Project-",
-    liveLink: "https://lnkd.in/gKMFKfxZ",
+    liveLink: "https://resturentapp.free.nf/",
   },
   {
     title: "GreenCart 🛒",
@@ -28,21 +29,21 @@ const projects = [
     title: "Portfolio 🌟",
     description:
       "A sleek portfolio built with React and Tailwind CSS to showcase skills, projects, and experience in a modern design.",
-    src: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
+    src: portfolio,
     link: "https://i.postimg.cc/J75CKyrs/Annotation-2025-04-01-203959.png",
     color: "#8f89ff",
-    githubLink: "https://github.com/seraprogrammer/portfolio",
-    liveLink: "https://codervai.vercel.app",
+    githubLink: "https://github.com/sak-shar00/React-portfolio",
+    liveLink: "https://react-portfolio-llnt.onrender.com",
   },
   {
     title: "Gemini Clone 🤖",
     description:
       "An AI chatbot platform clone built with React. Features include interactive chat, real-time responses, and sleek UI design.",
-    src: "https://external-preview.redd.it/i-created-google-gemini-clone-using-react-v0-bGdqZW41djllYWVkMZ-1hQ5SM3B2IS1s16LCdDpldIneC4iVFyhsO-s4Fwn.png?width=1080&crop=smart&format=pjpg&auto=webp&s=2d58919eb7ac75de62855e465fc19a5f9c471dde",
-    link: "https://external-preview.redd.it/i-created-google-gemini-clone-using-react-v0-bGdqZW41djllYWVkMZ-1hQ5SM3B2IS1s16LCdDpldIneC4iVFyhsO-s4Fwn.png?width=1080&crop=smart&format=pjpg&auto=webp&s=2d58919eb7ac75de62855e465fc19a5f9c471dde",
+    src: "https://external-preview.redd.it/i-created-google-gemini-clone-using-react-v0-bGdqZW41djllYWVkMZ-1hQY5SM3B2IS1s16LCdDpldIneC4iVFyhsO-s4Fwn.png?format=pjpg&auto=webp&s=53dbaa4782df15513132d4251a929bd0cbaa740d",
+    link: "https://external-preview.redd.it/i-created-google-gemini-clone-using-react-v0-bGdqZW41djllYWVkMZ-1hQY5SM3B2IS1s16LCdDpldIneC4iVFyhsO-s4Fwn.png?format=pjpg&auto=webp&s=53dbaa4782df15513132d4251a929bd0cbaa740d",
     color: "#4cafef",
     githubLink: "https://github.com/sak-shar00/Gemini-Clone",
-    liveLink: "#",
+    liveLink: "https://gemini-clone-ese4.onrender.com",
   },
   {
     title: "Todo App ✅",
@@ -52,7 +53,7 @@ const projects = [
     link: "https://media.geeksforgeeks.org/wp-content/uploads/20250121172354286891/Screenshot-2025-01-21-172254.png",
     color: "#34c759",
     githubLink: "https://github.com/sak-shar00/todo-frontend",
-    liveLink: "#",
+    liveLink: "https://todo-frontend-jw2s.vercel.app/",
   },
 ];
 
